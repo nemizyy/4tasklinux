@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/nemizyy/4tasklinux.git', credentialsId: 'access_for_jenkins'
+                git branch: 'main', url: 'https://github.com/nemizyy/4tasklinux.git', credentialsId: 'access_for_jenkins'
             }
         }
         
